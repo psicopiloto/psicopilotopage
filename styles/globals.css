@@ -1,0 +1,94 @@
+/* Puedes usar Tailwind CSS u otro framework, o CSS puro */
+/* Esto es un ejemplo base, puedes expandirlo según tus necesidades */
+
+:root {
+  --color-primary: #1e3a8a; /* Azul oscuro para profesionalidad */
+  --color-secondary: #fcd34d; /* Amarillo para energía y acción */
+  --color-text: #1f2937; /* Gris oscuro para la legibilidad */
+  --color-background: #f9fafb; /* Fondo claro */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.cta-primary:hover {
+  background-color: #1a3070;
+}
+
+.cta-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.cta-secondary:hover {
+  background-color: #eab308;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.flex-col { display: flex; flex-direction: column; }
+.justify-center { justify-content: center; }
+.items-center { align-items: center; }
+.text-center { text-align: center; }
+.my-8 { margin-top: 2rem; margin-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.rounded-full { border-radius: 9999px; }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+.rounded-xl { border-radius: 0.75rem; }
+
+@media (min-width: 768px) {
+  .md\:flex-row { flex-direction: row; }
+  .md\:space-x-8 > * + * { margin-left: 2rem; }
+}
