@@ -9,9 +9,13 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Servicios | Psicopiloto</title>
-        <meta name="description" content="Servicios de psicología y consultoría empresarial para gestionar el estrés, mejorar el liderazgo y la toma de decisiones.">
-      </Head>
+  <title>Servicios | Psicopiloto</title>
+  <meta
+    name="description"
+    content="Servicios de psicología y consultoría empresarial para gestionar el estrés, mejorar el liderazgo y la toma de decisiones."
+  />
+</Head>
+
       <Nav />
       <main className="py-12 md:py-20">
         <div className="container text-center">
